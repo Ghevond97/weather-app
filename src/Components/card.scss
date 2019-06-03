@@ -1,13 +1,19 @@
-.card-container {  
-  padding-top: 15%;
+.card-container {
+  padding-top: 8%;
   display: flex;
   justify-content: space-between;
-  width: 800px;
+  width: 1000px;
   align-items: center;
-  :hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  }
+  cursor: pointer;
 }
+
+// .card-container :hover {
+
+//     background: aliceblue;
+//     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+//     border-radius: 9%;
+
+// }
 
 .card {
   width: 150px;
@@ -23,12 +29,9 @@
   font-size: 18px;
   color: darkslategrey;
   font-family: serif;
-  transition: box-shadow .3s
+  transition: box-shadow .3s;
 }
 
-.card :hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
 
 .weekday {
   padding-top: 15%;
@@ -37,4 +40,61 @@
   font-size: 18px;
   color: darkslategrey;
   font-family: serif;
+}
+
+.hourly-container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  padding-top: 2%;
+  border-radius: 10%;
+  letter-spacing: 5.5px;
+  text-align: center;
+  font-size: 18px;
+  color: darkslategrey;
+  font-family: serif;
+
+  top: 28%;
+  justify-content: center;
+  left: 28%;
+  align-items: center;
+  @media (max-width: 1536px) {
+    left: 24%;
+    top: 33%;
+    }
+  @media (max-width: 1441px) {
+   left: 22%;
+    top: 30%;
+  }  
+  @media (max-width: 1336px) {
+  left: 20%;
+  top: 33%;
+  }
+  @media (max-width: 1281px) {
+    left: 18.5%;
+    top: 33%;
+    }
+  @media (max-width: 1200px) {
+    left: 15%;
+    top: 33%;
+    }
+}
+
+.hourly-box {
+  display: flex;
+  border-radius: 11px;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #dfdfdf;
+  opacity: 0.9;
+
+}
+
+.hourly-cell {
+
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+
 }
