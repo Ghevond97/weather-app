@@ -20,7 +20,7 @@ class WeatherContainer extends Component {
   }
 
   getWeather = async () => {
-    const url = `http://api.openweathermap.org/data/2.5/forecast?q=Yerevan,am&appid=${apiKey}&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/forecast?q=Yerevan,am&appid=${apiKey}&units=metric`;
     fetch(url)
       .then(res => res.json())
       .then(data => {

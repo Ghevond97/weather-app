@@ -64,7 +64,7 @@ class DailyWeatherCard extends Component {
         <div className="card" onClick={this.onCardClick}>
           <div className="weekday">{this.getDayOfWeek(data.key)}</div>
           <img
-            src={`http://openweathermap.org/img/w/${data.icon}.png`}
+            src={`https://openweathermap.org/img/w/${data.icon}.png`}
             alt=""
             style={{ objectFit: 'contain' }}
           />
